@@ -54,9 +54,6 @@ body {
                                         flex-grow: 1;
                                         flex-basis: calc(33% - 6rem);
                                         }
-                                        .cartao__conteudo__resposta p {
-                                            color: var(--card-back-color);
-                                            }
                                             .cartao__conteudo__resposta p {
                                                 color: var(--card-back-color);
                                                 font-weight: 700;
@@ -64,8 +61,13 @@ body {
                                                 .cartao:hover .cartao__conteudo {
                                                     transform: rotateY(180deg);
                                                     }
-                                    
-
+                                                    .cartao__conteudo__pergunta,
+                                                    .cartao__conteudo__resposta {
+                                                    backface-visibility: hidden;
+                                                    }
+                                                    .cartao__conteudo__resposta {
+                                                        transform: rotateY(180deg)
+                                                        }
 
 
 
